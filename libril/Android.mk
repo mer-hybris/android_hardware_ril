@@ -29,6 +29,9 @@ endif
 LOCAL_C_INCLUDES += $(TARGET_OUT_HEADER)/librilutils
 LOCAL_C_INCLUDES += external/nanopb-c
 
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)/../include
+LOCAL_C_INCLUDES += $(LOCAL_PATH)/../include
+
 LOCAL_MODULE:= libril
 
 LOCAL_COPY_HEADERS_TO := libril
